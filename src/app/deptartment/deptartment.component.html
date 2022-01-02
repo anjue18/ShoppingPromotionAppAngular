@@ -1,0 +1,17 @@
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-3" *ngFor="let promotion of promotions;let index=index;">
+            <div class="card bg-c-blue order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">{{ promotion.promoDesc }} </h6>
+                    <h2 class="text-right"><i class="fa fa-cart-plus f-right" (click)="addToCart(promotion)"><h6>Add</h6></i><span><app-hover [promotionName]="promotion.promoName"></app-hover></span></h2>
+                    <p class="m-b-0">Discount Price: {{ promotion.promoDiscPrice}}<span class="f-right"></span></p>
+                    <p class="m-b-0"><span class="f-right">List Price: <del>{{ promotion.promoListPrice}}</del></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

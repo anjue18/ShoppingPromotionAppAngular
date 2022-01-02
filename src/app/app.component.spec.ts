@@ -16,16 +16,23 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'shopping-promotion-app'`, () => {
+  it(`should have as title 'shoppingPromotionApp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('shopping-promotion-app');
   });
 
-  it('should render title', () => {
+  it('should render Promotions', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('shopping-promotion-app app is running!');
+    expect(compiled.querySelector('h2')?.textContent).toContain('Promotions');
+  });
+
+  it('should render Descriptions', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h6')?.textContent).toContain('Descriptions ');
   });
 });

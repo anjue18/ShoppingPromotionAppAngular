@@ -1,0 +1,11 @@
+.container {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(179, 84, 84);
+    position: absolute;
+    background: rgb(113, 112, 192);
+    padding: 0.5em;
+    box-shadow: 0 3px 10px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+    font-size: 10px;
+    z-index: 99;
+  }

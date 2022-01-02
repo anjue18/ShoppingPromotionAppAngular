@@ -1,0 +1,13 @@
+.main-container {
+    width: 10%;
+    height: 40px;
+  }
+  .skill {
+    background-color: rgb(128, 162, 235);
+    color: #fff;
+    padding: 5px;
+    border-radius: 10%;
+    cursor: default;
+    margin: 5px;
+  }
+  

@@ -34,11 +34,9 @@ body{
 }
 
 .card .card-block {
-    padding: 20px;
+    padding: 25px;
 }
-.card .cart-block {
-    padding: 2px;
-}
+
 .order-card i {
     font-size: 26px;
 }
